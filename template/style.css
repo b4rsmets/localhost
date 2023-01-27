@@ -342,6 +342,3 @@ a{
 .opac{
     transition: 1s;
 }
-.ulmenu li:hover{
-    text-decoration: underline;
-}
