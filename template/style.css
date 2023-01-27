@@ -181,7 +181,7 @@ a{
     flex-wrap: nowrap;
     padding-bottom: 106px;
     line-height: 33px;
-    margin-left: 347px;
+    margin-left: 157px;
     margin-top: 50px;
     margin-right: 62px;
 }
@@ -192,6 +192,7 @@ a{
 .poster-film img{
     width: 374px;
     height: 500px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 49%);
 }
 .genre-film> h3{
     opacity: 0.6;
