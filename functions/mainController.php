@@ -4,7 +4,7 @@ class mainController
 {
 
     public function getRoute(){
-        if($_GET['route']==''){
+        if($_GET['route']=='afisha'){
             require_once "./views/mainpage.php";
         }
         if($_GET['route']=='film'){

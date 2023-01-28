@@ -1,6 +1,6 @@
 <header id="header">
     <div class="container-menu">
-       <a href="/"><div class="logo">
+       <a href="afisha"><div class="logo">
             <span class="kinoteatr">КИНО</span>
             <span class="olimp">Олимп</span>
         </a> 
@@ -14,5 +14,5 @@
             </ul>
         </div>
     </div>
-    <a href="#"><div class="login"><img src="../resource/images/enter.png" alt=""><span>Войти в личный кабинет</span></div></a>
+    <a href="#"><div class="login"><img src="./resource/images/enter.png" alt=""><span>Войти в личный кабинет</span></div></a>
 </header>

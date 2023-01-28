@@ -5,7 +5,7 @@
                 <div class="text-in-picture">
                     <span>12 Декабря</span>
                 </div>
-                <img class="opac" src="../resource/uploads/afisha/avatar.jpg" alt="">
+                <img class="opac" src="./resource/uploads/afisha/avatar.jpg" alt="">
                 
             </div>
         </div>
@@ -14,7 +14,7 @@
                 <div class="text-in-picture">
                     <span>12 Декабря</span>
                 </div>
-                <img class="opac" src="../resource/uploads/afisha/avatar.jpg" alt="">
+                <img class="opac" src="./resource/uploads/afisha/avatar.jpg" alt="">
                 
             </div>
         </div>
@@ -23,7 +23,7 @@
                 <div class="text-in-picture">
                     <span>12 Декабря</span>
                 </div>
-                <img class="opac" src="../resource/uploads/afisha/avatar.jpg" alt="">
+                <img class="opac" src="./resource/uploads/afisha/avatar.jpg" alt="">
                 
             </div>
         </div>
@@ -32,7 +32,7 @@
                 <div class="text-in-picture">
                     <span>12 Декабря</span>
                 </div>
-                <img class="opac" src="../resource/uploads/afisha/avatar.jpg" alt="">
+                <img class="opac" src="./resource/uploads/afisha/avatar.jpg" alt="">
                 
             </div>
         </div>
@@ -41,7 +41,7 @@
                 <div class="text-in-picture">
                     <span>12 Декабря</span>
                 </div>
-                <img class="opac" src="../resource/uploads/afisha/avatar.jpg" alt="">
+                <img class="opac" src="./resource/uploads/afisha/avatar.jpg" alt="">
                 
             </div>
         </div>
