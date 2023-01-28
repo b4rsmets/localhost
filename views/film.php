@@ -60,7 +60,7 @@ if($query->num_rows) {
                 <span><?=$film[0]['movie_description']?></span>
             </div>
             <div class="trailer">
-            <iframe width="1000" height="500" src="https://www.youtube.com/embed/ueExdWhHsJo" title="«ЧЕБУРАШКА» — трейлер" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="1000" height="500" src="<?=$film[0]['movie_trailer']?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
 </div>  
