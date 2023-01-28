@@ -23,7 +23,7 @@ foreach ($films as $item)
                 <img src="./resource/uploads/afisha/<?=$item['movie_image']?>" alt="">
              </div>
              <div class="information">
-             <a href="film?id=<?=$item['id']?>"><div class="title-card">
+             <a href="/film?id=<?=$item['id']?>"><div class="title-card">
             <h2><?=$item['movie_title'];?></h2>
         </div>
         </a>

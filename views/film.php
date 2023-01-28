@@ -1,26 +1,39 @@
+<?php
+use DBConnect as DBConnect;
+$connect= DBConnect::getInstance()->getConnect();
+$sql="SELECT * FROM movies WHERE id=".$_GET['id'];
+
+$query=$connect->query($sql);
+if($query->num_rows) {
+  while ($row = $query->fetch_assoc()) {
+    $film[] = $row;
+  }
+}
+
+?>
 <div class="container-film">
         <div class="information-film">
             <div class="poster-film">
-                <img src="./resource/uploads/afisha/<?=$item['movie_image']?>" alt="">
+                <img src="./resource/uploads/afisha/<?=$film[0]['movie_image']?>" alt="">
             </div>
             <div class="restriction-film">
-                <span>6+</span>
+                <span><?=$film[0]['movie_restriction']?>+</span>
             </div>
             <div class="title-film">
-                <h2>Чебурашка</h2>
+                <h2><?=$film[0]['movie_title']?></h2>
             </div>
             
             <div class="genre-film">
             <span class="podtext">Жанр</span>
-                <h3>Семейный, приключения</h3>
+                <h3><?=$film[0]['movie_genre']?></h3>
             </div>
             <div class="country-film">
             <span class="podtext">Страна</span>
-                <h3>Россия</h3>
+                <h3><?=$film[0]['movie_country']?></h3>
             </div>
             <div class="duration-film">
             <span class="podtext">Продолжительность</span>
-                <p>2 ч. 12 мин.</p>
+                <p><?= date("g \ч. i \мин.", strtotime($film[0]['movie_duration']));?></p>
             </div>
         </div>
         <div class="content-film-container">
@@ -44,17 +57,7 @@
            
             </div>
             <div class="description-film">
-                <span>Иногда, чтобы вернуть солнце и улыбки в мир взрослых, 
-                    нужен один маленький ушастый герой. Мохнатого непоседливого 
-                    зверька из далекой апельсиновой страны ждут удивительные приключения 
-                    в тихом приморском городке, где ему предстоит найти себе имя, друзей 
-                    и дом.
-                    Помогать — и мешать! — ему в этом будут нелюдимый старик-садовник, 
-                    странная тетя-модница и ее капризная внучка, мальчик, который никак 
-                    не начнет говорить, и его мама, которой приходится несладко, хотя она 
-                    и варит самый вкусный на свете шоколад. И многие-многие другие, в чью 
-                    жизнь вместе с ароматом апельсинов вот-вот ворвутся волшебство и
-                     приключения.</span>
+                <span><?=$film[0]['movie_description']?></span>
             </div>
             <div class="trailer">
             <iframe width="1000" height="500" src="https://www.youtube.com/embed/ueExdWhHsJo" title="«ЧЕБУРАШКА» — трейлер" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
