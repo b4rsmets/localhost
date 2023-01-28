@@ -23,7 +23,7 @@ foreach ($films as $item)
                 <img src="./resource/uploads/afisha/<?=$item['movie_image']?>" alt="">
              </div>
              <div class="information">
-             <a href="film"><div class="title-card">
+             <a href="film?id=<?=$item['id']?>"><div class="title-card">
             <h2><?=$item['movie_title'];?></h2>
         </div>
         </a>
@@ -44,7 +44,7 @@ foreach ($films as $item)
        <?php
 }
 if (empty($films)) {
-    echo 'Приносим извинения, пока что нет фильмов в прокате';
+    echo 'Пока что нет фильмов в прокате';
 }
 ?>
 </div>

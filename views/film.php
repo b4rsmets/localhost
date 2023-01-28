@@ -1,7 +1,7 @@
 <div class="container-film">
         <div class="information-film">
             <div class="poster-film">
-                <img src="./resource/uploads/afisha/cheburashka.jpg" alt="">
+                <img src="./resource/uploads/afisha/<?=$film['movie_image']?>" alt="">
             </div>
             <div class="restriction-film">
                 <span>6+</span>

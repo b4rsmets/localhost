@@ -9,6 +9,7 @@ class mainController
         }
         if($_GET['route']=='film'){
             require_once "./views/film.php";
+            $_SESSION['film']['id']=$_GET['id'];
         }
         if($_GET['route']=='soon'){
             require_once "./views/soon-cinema.php";
