@@ -14,7 +14,9 @@ if($query->num_rows) {
 
 <div class="container-catalog">
 <?php
-foreach ($films as $item){
+if(is_array($films))
+foreach ($films as $item)
+{
 ?>
     <div data-aos="zoom-in" class="card">
             <div class="image-card">
@@ -40,6 +42,9 @@ foreach ($films as $item){
 
     </div> 
        <?php
+}
+if (empty($films)) {
+    echo 'Приносим извинения, пока что нет фильмов в прокате';
 }
 ?>
 </div>
