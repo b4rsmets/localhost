@@ -64,3 +64,5 @@ if($query->num_rows) {
             </div>
         </div>
 </div>  
+<?php 
+?>
