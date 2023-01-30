@@ -51,7 +51,7 @@ foreach ($seans as $time)
                 <div class="block-time">
                    
                         
-                <h2><?=$time['movie_id']?> <?= date("G:i", strtotime($time['time_movie']));?>
+                <h2><?= date("G:i", strtotime($time['time_movie']));?>
                 </div>
                 <?php
 }
