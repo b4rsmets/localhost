@@ -7,6 +7,7 @@ if($query->num_rows) {
         $films[] = $row;
     }
 }
+require_once './functions/seans.php';
 ?>
 <div class="slider">
     
@@ -33,9 +34,33 @@ foreach ($films as $item)
         <div class="raspes-card">
             <h3>Сеансы 2D</h3>
             <div class="container-times">
+            <?
+            $sql="SELECT * FROM seans,movies WHERE seans.movie_id=movies.id AND movie_id=".$item['id'];
+            $query=$connect->query($sql);
+            if($query->num_rows) {
+              while ($row = $query->fetch_assoc()) {
+                $seans[] = $row;
+              }
+            }
+if(is_array($seans))
+
+foreach ($seans as $time)
+
+{
+?>
                 <div class="block-time">
-                    <h2>11:30</h2>
+                   
+                        
+                <h2><?=$time['movie_id']?> <?= date("G:i", strtotime($time['time_movie']));?>
                 </div>
+                <?php
+}
+if (empty($seans)) {
+    echo 'Нет проката';
+}
+
+
+?>
             </div>
         </div>
     </div>

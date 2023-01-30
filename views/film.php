@@ -9,7 +9,7 @@ if($query->num_rows) {
     $film[] = $row;
   }
 }
-
+require_once './functions/seans.php';
 ?>
 <div class="container-film">
         <div class="information-film">
@@ -42,16 +42,20 @@ if($query->num_rows) {
                 <div class="seans-container-film">
                      <h1>Сеансы</h1>
                     <div class="container-card">
-                    
+                    <?php
+if(is_array($seans))
+foreach ($seans as $time){
+?>
                     <div class="seans-card">
-                        <h2>14:30</h2>
+                        <h2><?= date("G:i", strtotime($time['time_movie']));?></h2>
                     </div>
-                    <div class="seans-card">
-                        <h2>17:30</h2>
-                    </div>
-                    <div class="seans-card">
-                        <h2>20:30</h2>
-                    </div>
+
+                    <?php
+}
+if (empty($seans)) {
+    echo 'Нет проката';
+}
+?>
                 </div>
             </div>
            
